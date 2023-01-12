@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All About Bella 🐩</title>
+    <style>
+      body {
+        background: radial-gradient(
+          1091px at 106.5% 111.5%,
+          rgb(250, 246, 213) 0.1%,
+          rgb(218, 147, 93) 42.2%,
+          rgb(137, 86, 67) 74.3%,
+          rgb(67, 39, 39) 100.2%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: burlywood;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid burlywood;
+        line-height: 50px;
+        font-size: 25px;
+        border-radius: 15px;
+        font-family: cursive;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 20px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 18x;
+        margin: 25px 0 10px;
+      }
+      button {
+        display: block;
+        margin: auto;
+        background: burlywood;
+        font-size: 16px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px 60px;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      a {
+        display: block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: burlywood;
+        font-size: 15px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      h3 {
+        text-align: center;
+        font-weight: lighter;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I Love Dogs</h1>
+      <h2>Especially My Toy Poodle 🐩!</h2>
+      <img
+        src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/196/original/Picture_of_bella.png?1670519472"
+        alt="Bella"
+      />
+      <p>
+        Bella is a toy poodle which is the second smallest of the four sizes
+        that poodles come in. There's a standard, miniture, toy, and teacup
+        poodle, however, Bella is the perfect size for cuddles. Something many
+        people don't know about Bella is that she's a senior dog and is 13 years
+        old. Due to her size, many people believe she's a puppy despite all of
+        her gray hairs. Some fun facts about Bella are that she loves to eat
+        scrambled eggs, sun bathe, play with her toys and receive belly rubs. I
+        love that she let's me take photos of her because she's so photogenic.
+        If you would like to keep up with Bella, her virtual photo album will be
+        linked below!
+        <br />
+        <a
+          href="https://www.instagram.com/real_bellamay/?igshid=YWJhMjlhZTc%3D"
+          target="_blank"
+        >
+          Follow Bella on Instagram 📲</a
+        >
+      </p>
+      <button>Purchase Your Dog Today</button>
+      <br />
+      <h3>This page was coded by Myah Savage</h3>
+    </div>
+    <script>
+      function purchase() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("What is your favorite heart emoji?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch via email. In the mean time, love on a dog you know today." +
+            emoji
+        );
+      }
+
+      let purchaseButton = document.querySelector("button");
+      purchaseButton.addEventListener("click", purchase);
+    </script>
+  </body>
+</html>
